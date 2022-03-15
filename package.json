@@ -1,0 +1,45 @@
+{
+	"type": "module",
+	"name": "tsstats_bot",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "env-cmd npx tsc-watch --onSuccess \"node .build/index.js\"",
+		"build": "tsc --build",
+		"lint": "eslint . --ext .ts",
+		"lint:fix": "eslint . --ext .ts --fix",
+		"typegen:pg": "pgtyped -c pgtyped.json"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@pgtyped/cli": "^0.13.0",
+		"@pgtyped/query": "^0.13.0",
+		"axios": "^0.24.0",
+		"cheerio": "^1.0.0-rc.10",
+		"get-image-colors": "^4.0.1",
+		"got-scraping": "^3.2.8",
+		"hex-color-to-color-name": "^1.0.2",
+		"hex-to-color-name": "^1.0.1",
+		"jsdom": "^19.0.0",
+		"node-telegram-bot-api": "0.56.0",
+		"pg": "^8.7.3",
+		"puppeteer": "^13.5.1",
+		"steam-market-search": "^1.4.3"
+	},
+	"devDependencies": {
+		"@onmoon/tsconfigs": "^2.0.0",
+		"@types/get-image-colors": "^4.0.1",
+		"@types/jsdom": "^16.2.14",
+		"@types/node": "^17.0.8",
+		"@types/node-telegram-bot-api": "^0.53.6",
+		"@types/pg": "^8.6.5",
+		"env-cmd": "^10.1.0",
+		"eslint": "^8.6.0",
+		"prettier": "^2.5.1",
+		"ts-node": "^10.4.0",
+		"ts-node-dev": "^1.1.8"
+	}
+}
