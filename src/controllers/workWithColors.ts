@@ -69,3 +69,4 @@ function namedColor(colors: Array<number[]>, count: number) {
 	})
 	return sort.slice(0, count)
 }
+console.log('Second Test')
